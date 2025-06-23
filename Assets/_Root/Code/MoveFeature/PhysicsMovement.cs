@@ -7,6 +7,7 @@ namespace _Root.Code.MoveFeature
         private Rigidbody2D _rigidbody2D;
         private float _speed;
         private float _acceleration;
+        public bool IsMoving => _rigidbody2D.velocity != Vector2.zero;
 
         public PhysicsMovement(Rigidbody2D rigidbody2D, float speed, float acceleration)
         {
@@ -23,5 +24,7 @@ namespace _Root.Code.MoveFeature
                 _rigidbody2D.velocity = _rigidbody2D.velocity.normalized * _speed;
             }
         }
+
+        
     }
 }

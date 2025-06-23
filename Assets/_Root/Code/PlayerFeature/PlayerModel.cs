@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using _Root.Code.SaveFeature;
+using UnityEngine;
 
 namespace Game.Code.PlayerFeature
 {
@@ -13,6 +14,13 @@ namespace Game.Code.PlayerFeature
             Position = position;
             Speed = speed;
             Acceleration = acceleration;
+        }
+        
+
+        public struct SaveData
+        {
+            public Vector3 Position;
+            public float Health;
         }
     }
 }
